@@ -1,0 +1,51 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background: url("https://i0.wp.com/www.eastmojo.com/wp-content/uploads/2021/07/tone-words-scaled-1.jpg?fit=1200%2C675&ssl=1");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.data{
+    font-size: 20px;
+    margin:10px;
+    padding:13px;
+    background-color: rgba(222, 227, 190, 0.421);
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-around; */
+    gap:30px;
+   
+    
+}
+table{
+    padding: 20px;
+    margin:30px;
+    width: 80%;
+    border-collapse:collapse;
+   
+}
+td{
+    /* padding:20px; */
+    border:none;
+    font-weight: 500;
+    text-transform: capitalize;
+    text-align: center;
+    width:30%
+    
+}
+input{
+    padding:10px;
+    margin:30px;
+    width: 60%;
+    /* background: transparent; */
+}
+.emoji{
+    font-size: 40px;
+}

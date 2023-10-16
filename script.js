@@ -6,11 +6,17 @@ emojiList.forEach(ele => {
     row.setAttribute("class", "data")
     let emoji = document.createElement("td");
     emoji.innerText = ele.emoji;
+    emoji.setAttribute("class","emoji");
+
+    let name = document.createElement("td");
+    name.innerText = ele.aliases;
+    
 
     let description = document.createElement("td");
     description.innerText = ele.description;
 
     row.appendChild(emoji);
+    row.appendChild(name);
     row.appendChild(description);
 
     table.appendChild(row);
@@ -39,14 +45,18 @@ function checklist(arr) {
 
         let row = document.createElement("tr");
         row.setAttribute("class", "data")
+        let emoji= document.createElement("td");
+        emoji.innerText = ele.emoji;
+        emoji.setAttribute("class","emoji");
         let name = document.createElement("td");
-        name.innerText = ele.emoji;
+        name.innerText = ele.aliases;
 
-        let country = document.createElement("td");
-        country.innerText = ele.description;
+        let description = document.createElement("td");
+       description.innerText = ele.description;
 
+        row.appendChild(emoji);
         row.appendChild(name);
-        row.appendChild(country);
+        row.appendChild(description);
 
         div.appendChild(row);
         //    console.log(div)
